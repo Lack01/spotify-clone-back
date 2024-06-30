@@ -13,7 +13,7 @@ spring:
     name: spotify-clone
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://${POSTGRES_URL}:5432/${POSTGRES_DB}
+    url: jdbc:postgresql://${POSTGRES_URL}:${POSTGRES_PORT}/${POSTGRES_DB}
     username: ${POSTGRES_USERNAME}
     password: ${POSTGRES_PASSWORD}
     hikari:
@@ -29,11 +29,11 @@ spring:
       ddl-auto: none
     properties:
       hibernate:
-        default_schema: spotify_clone
+        default_schema: public
   liquibase:
     contexts: dev
     change-log: classpath:db/changelog/master.xml
-    default-schema: spotify_clone
+    default-schema: public
     enabled: true
   #    drop-first: true
   servlet:
