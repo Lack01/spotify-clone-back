@@ -1,4 +1,4 @@
-# Created at 2024-07-01T11:30:14.614
+# Created at 2024-07-01T17:57:35.285
 Boot Manifest-JAR contains absolute paths in classpath 'E:\Projects\spotify-clone-back\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 'other' has different root

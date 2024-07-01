@@ -2,11 +2,10 @@ package com.codelack.springboot.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
 
 
-@SpringBootApplication
-@ComponentScan("com.codelack.springboot.app")
+
+@SpringBootApplication(scanBasePackages = "com.codelack.springboot.app.usercontext")
 public class SpotifyCloneBackApplication {
 
 	public static void main(String[] args) {
